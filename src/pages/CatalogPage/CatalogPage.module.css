@@ -1,9 +1,33 @@
+*{
+    background-color: #E7E7E3;
+}
 .app{
-    background-color: black;
     width: 90%;
     margin: 0 auto;
 
 }
 .createProductSection{
-    
+    width: 100px;
+}
+.Catalogfilt{
+    display: flex;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.Catalogfilt{
+    display: flex;
+    flex: 30% 70%;
+}
+.productsGrid{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: minmax(3,3px);
+}
+h1{
+    padding-top: 20px;
+    font-size: 36px ;
+}
+img{
+    max-width: 200px;
 }

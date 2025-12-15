@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+
 import styles from "../CatalogPage/CatalogPage.module.css"
 import CreateProductForm from "./components/CreateProductForm/CreateProductForm";
 import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero"
+import Filter from "./components/Filter/Filter"
 import ProductCard from "./components/ProductCard/ProductCard";
 
 function CatalogPage() {
@@ -44,30 +47,38 @@ function CatalogPage() {
 
   return (
     <>
-      <Header />
+      <main className={styles.app}>
+        <div className={styles.container}>
+          <Header />
+          <Hero />
 
-      <main className={styles.app}><div className="container">
-        <h1>Каталог товаров</h1>
+          <h1>Life Style Shoes</h1>
+          <p>10 items</p>
 
-        <div className={styles.createProductSection}>
-          <button
-            className="toggle-form-button"
-            onClick={() => setShowCreateForm(!showCreateForm)}
-          >
-            {showCreateForm ? "Скрыть форму" : "Создать новый товар"}
-          </button>
-        </div>
+          <div className={styles.Catalogfilt}>
+            <Filter />
+            <div className={styles.Catalog} >
+              <h1>Каталог товаров</h1>
 
-        {showCreateForm && (
-          <CreateProductForm onProductCreated={handleProductCreated} />
-        )}
+              <div className={styles.createProductSection}>
+                <button
+                  className={styles.ToggleFormButton}
+                  onClick={() => setShowCreateForm(!showCreateForm)}
+                >
+                  {showCreateForm ? "Скрыть форму" : "Создать новый товар"}
+                </button>
+              </div>
 
-        <div className="products-grid">
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div></div >
-      </main>
+              {showCreateForm && (
+                <CreateProductForm onProductCreated={handleProductCreated} />
+              )}
+
+              <div className={styles.productsGrid}>
+                {products.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div></div ></div></div>
+      </main >
     </>
   );
 }

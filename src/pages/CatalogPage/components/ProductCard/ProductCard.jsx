@@ -2,9 +2,9 @@ import "./ProductCard.module.css";
 // Компонент карточки товара 
 function ProductCard({ product }) { 
   return (
-    <div className="product-card"> 
+    <div className="productCard"> 
       {/* Изображение товара */} 
-      <div className="product-image"> 
+      <div className="productImage"> 
         <img src={product.image} alt={product.name} /> 
       </div> 
       {/* Информация о товаре */} 

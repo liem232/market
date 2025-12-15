@@ -98,8 +98,8 @@ function CreateProductForm({ onProductCreated }) {
             setMessage(errorMessage);
             setMessageType("error");
         } finally {
-            setIsSubmitting(false);
-        }
+            setIsSubmitting(false); 
+        }ёё
     };
     return (
         <div className="create-product-form">

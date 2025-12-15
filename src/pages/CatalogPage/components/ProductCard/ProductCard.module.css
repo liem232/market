@@ -1,0 +1,10 @@
+.productCard{
+    display: grid;
+    grid-template-columns: minmax(25px,1pr);
+   
+
+}
+.productImage{
+    max-width: 200px;
+
+}

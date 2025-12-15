@@ -1,0 +1,42 @@
+.main {
+    padding-top: 40px;
+    width: 100%;
+    color: white;
+}
+
+.adv {
+
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 395px;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('public/img/advertising.svg');
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+.adv h2 {
+    background-color: transparent;
+    font-size: 24px;
+    color: #E7E7E3;
+}
+
+.adv h1 {
+    background-color: transparent;
+    font-size: 74px;
+    font-weight: 900;
+
+}
+
+.adv p {
+    background-color: transparent;
+    width: 490px;
+    font-size: 20px;
+    color: #E7E7E3;
+}
