@@ -1,0 +1,66 @@
+footer{
+    background-color: black;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+ 
+}
+
+.footertitles{
+    display: flex;  color: white;
+    justify-content: space-between;
+    
+}
+.about{
+    font-size: 20px;
+    width: 40%;
+}
+h1{
+
+    color: white;
+}
+.categoriess{
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+    align-items: center;
+}
+.categoriess ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.company {
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+    align-items: center;
+}
+.company ul{
+   list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.sociallinks{
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+    align-items: center;
+}
+.links {
+    display: flex;
+   background-color: black;
+    gap: 5px;
+    align-items: center;
+}
+.links img{
+   background-color: black;
+    
+}
