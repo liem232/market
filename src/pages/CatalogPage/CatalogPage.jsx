@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+<<<<<<< HEAD
 import Footer from "./components/Footer/Footer";
 import styles from "./CatalogPage.module.css"; // Исправлен импорт
+=======
+
+import styles from "../CatalogPage/CatalogPage.module.css"
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab
 import CreateProductForm from "./components/CreateProductForm/CreateProductForm";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero"
@@ -38,6 +43,7 @@ function CatalogPage() {
   };
 
   if (loading) {
+<<<<<<< HEAD
     return <div className={styles.loading}>Загрузка товаров...</div>;
   }
 
@@ -83,6 +89,50 @@ function CatalogPage() {
       </div> 
      <Footer />
     </main>
+=======
+    return <div className="loading">Загрузка товаров...</div>;
+  }
+
+  if (error) {
+    return <div className="error">Ошибка: {error}</div>;
+  }
+
+  return (
+    <>
+      <main className={styles.app}>
+        <div className={styles.container}>
+          <Header />
+          <Hero />
+
+          <h1>Life Style Shoes</h1>
+          <p>10 items</p>
+
+          <div className={styles.Catalogfilt}>
+            <Filter />
+            <div className={styles.Catalog} >
+              <h1>Каталог товаров</h1>
+
+              <div className={styles.createProductSection}>
+                <button
+                  className={styles.ToggleFormButton}
+                  onClick={() => setShowCreateForm(!showCreateForm)}
+                >
+                  {showCreateForm ? "Скрыть форму" : "Создать новый товар"}
+                </button>
+              </div>
+
+              {showCreateForm && (
+                <CreateProductForm onProductCreated={handleProductCreated} />
+              )}
+
+              <div className={styles.productsGrid}>
+                {products.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div></div ></div></div>
+      </main >
+    </>
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab
   );
 }
 

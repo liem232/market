@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .filter {
   flex: 0 0 30%;
@@ -219,3 +220,131 @@
 }
 
 
+=======
+.filter h1 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+.filter{
+    width: 100%;
+    padding-top: 30p ;
+}
+
+.refine {
+    color: black;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.refine h2 {
+    font-size: 18px;
+    letter-spacing: normal;
+}
+
+.refinebut {
+    padding: 15px 0px;
+    display: flex;
+    gap: 15px;
+    color: white;
+
+}
+
+.button {
+    padding: 10px 15px;
+    background-color: #4A69E2;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.size nav {
+padding: 15px 0px ;
+    
+}
+.size nav ul {
+
+    flex-wrap: wrap;
+    display: flex;
+    gap: 6px;
+}
+
+.size li {
+    padding: 18px;
+    background-color: white;
+    cursor: pointer;
+border-radius: 4px;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 20px;
+}
+
+.size h2 {
+    font-size: 18px;
+    letter-spacing: normal;
+}
+.color h2{
+    font-size: 18px;
+    letter-spacing: normal;
+}
+.colorList {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px; 
+  list-style: none;
+  padding: 10px 0px;
+}
+
+.colorSquare {
+  width: 50px; 
+  height: 50px;
+  border-radius: 4px; 
+  cursor: pointer;
+}
+
+.colorSquare:hover {
+  opacity: 0.8;
+}
+
+.colorSquare.selected {
+  border: 2px solid #000; /* Обводка выбранного цвета */
+}
+.type h2{
+ font-size: 18px;
+ 
+}
+.type{
+ display: flex;
+ flex-direction: column;
+ gap:5px;
+ font-size: 15px;
+ 
+}
+.type {
+    padding: 15px 0px;
+ display: flex;
+ flex-direction: column;
+ gap:5px;
+ 
+}
+.check{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.gender h2{
+    font-size: 18px;
+
+}
+.gender{
+    display: flex  ;
+    flex-direction: column;
+    gap: 5px;
+}
+.genderf {gap: 10px;
+display: flex;
+}
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab

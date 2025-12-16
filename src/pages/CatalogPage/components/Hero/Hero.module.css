@@ -28,7 +28,11 @@
 }
 
 .adv h1 {
+<<<<<<< HEAD
     color: white;
+=======
+    background-color: transparent;
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab
     font-size: 74px;
     font-weight: 900;
 

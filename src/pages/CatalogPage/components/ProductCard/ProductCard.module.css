@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .productCard {
   border: 1px solid #e0e0e0;
   border-radius: 12px;
@@ -65,3 +66,15 @@
   flex-grow: 1;
 }
 
+=======
+.productCard{
+    display: grid;
+    grid-template-columns: minmax(25px,1pr);
+   
+
+}
+.productImage{
+    max-width: 200px;
+
+}
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab

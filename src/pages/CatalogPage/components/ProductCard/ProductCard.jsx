@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import styles from "./ProductCard.module.css"; 
+=======
+import "./ProductCard.module.css"; 
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab
 // Компонент карточки товара 
 function ProductCard({ product }) { 
   return (

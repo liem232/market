@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .container {
   max-width: 1200px;
@@ -85,3 +86,38 @@
   color: #e74c3c;
 }
 
+=======
+*{
+    background-color: #E7E7E3;
+}
+.app{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.createProductSection{
+    width: 100px;
+}
+.Catalogfilt{
+    display: flex;
+    padding-top: 30px;
+    gap: 30px;
+}
+
+.Catalogfilt{
+    display: flex;
+    flex: 30% 70%;
+}
+.productsGrid{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: minmax(3,3px);
+}
+h1{
+    padding-top: 20px;
+    font-size: 36px ;
+}
+img{
+    max-width: 200px;
+}
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab

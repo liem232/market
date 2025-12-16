@@ -1,6 +1,7 @@
 import style from "./footer.module.css"
 
 function Footer() {
+<<<<<<< HEAD
     return (
         <footer>
             <div className={style.container}>
@@ -44,3 +45,8 @@ function Footer() {
         )
 }
 export default Footer
+=======
+
+    
+}
+>>>>>>> 1667c58c4fd17e87f1d3d1a6bc8ebe9dc4094eab
